@@ -1,4 +1,12 @@
 {
+  "name": "e-lugaro",
+  "author": "lugrao",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "eslint": "^8.36.0",
