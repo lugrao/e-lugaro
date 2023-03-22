@@ -6,7 +6,7 @@ import { ExternalLink } from "components/ExternalLink"
 
 const contact = [
   <ExternalLink href="mailto:ezequiellugaro@gmail.com">
-    Email <Email />
+    Email <Email css={{ height: 13, width: 18 }} />
   </ExternalLink>,
   <ExternalLink href="https://github.com/lugrao/">
     GitHub <GitHub />
