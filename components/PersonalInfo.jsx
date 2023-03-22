@@ -18,7 +18,7 @@ const contact = [
 
 export function PersonalInfo() {
   return (
-    <>
+    <div>
       <Image
         src={profilePic}
         alt="Picture of Ezequiel"
@@ -27,8 +27,8 @@ export function PersonalInfo() {
         css={{ borderRadius: "50%" }}
       />
       <h1>Ezequiel Lúgaro</h1>
-      <p>Web Developer</p>
+      <p css={{ fontWeight: "bold", fontSize: 20 }}>Web Developer</p>
       <List css={{ listStyle: "none" }} items={contact} />
-    </>
+    </div>
   )
 }
