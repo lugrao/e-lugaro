@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import ably from "public/icons/Ably.webp"
 import auth0 from "public/icons/Auth0.svg"
 import chakraui from "public/icons/Chakra-UI.webp"
 import checkmark from "public/icons/Checkmark.svg"
@@ -18,6 +19,7 @@ import vercel from "public/icons/Vercel.png"
 
 const Img = ({ src }) => <Image width={15} height={15} src={src} />
 
+const Ably = () => <Img src={ably} />
 const Auth0 = () => <Img src={auth0} />
 const ChakraUI = () => <Img src={chakraui} />
 const Checkmark = () => <Img src={checkmark} />
@@ -35,6 +37,7 @@ const React = () => <Img src={react} />
 const Vercel = () => <Img src={vercel} />
 
 export {
+  Ably,
   Auth0,
   ChakraUI,
   Checkmark,

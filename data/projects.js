@@ -1,4 +1,5 @@
 import {
+  Ably,
   Flask,
   Vercel,
   Nextjs,
@@ -38,7 +39,9 @@ export const projects = [
         <>
           Next.js <Nextjs />
         </>,
-        "Ably",
+        <>
+          Ably <Ably />
+        </>,
       ],
       <>
         Deployed via Vercel <Vercel />
