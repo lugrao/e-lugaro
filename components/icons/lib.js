@@ -18,25 +18,25 @@ import react from "public/icons/React.svg"
 import sql from "public/icons/SQL.png"
 import vercel from "public/icons/Vercel.png"
 
-const Img = ({ src }) => <Image width={15} height={15} src={src} />
+const Img = (props) => <Image width={15} height={15} {...props} />
 
-const Ably = () => <Img src={ably} />
-const Auth0 = () => <Img src={auth0} />
-const ChakraUI = () => <Img src={chakraui} />
-const Checkmark = () => <Img src={checkmark} />
-const CSS = () => <Img src={css} />
-const Email = () => <Img src={email} />
-const Flask = () => <Img src={flask} />
-const GitHub = () => <Img src={github} />
-const HTML = () => <Img src={html} />
-const JavaScript = () => <Img src={javascript} />
-const LinkedIn = () => <Img src={linkedin} />
-const MongoDB = () => <Img src={mongodb} />
-const Nextjs = () => <Img src={nextjs} />
-const Python = () => <Img src={python} />
-const React = () => <Img src={react} />
-const SQL = () => <Img src={sql} />
-const Vercel = () => <Img src={vercel} />
+const Ably = (props) => <Img {...props} src={ably} />
+const Auth0 = (props) => <Img {...props} src={auth0} />
+const ChakraUI = (props) => <Img {...props} src={chakraui} />
+const Checkmark = (props) => <Img {...props} src={checkmark} />
+const CSS = (props) => <Img {...props} src={css} />
+const Email = (props) => <Img {...props} src={email} />
+const Flask = (props) => <Img {...props} src={flask} />
+const GitHub = (props) => <Img {...props} src={github} />
+const HTML = (props) => <Img {...props} src={html} />
+const JavaScript = (props) => <Img {...props} src={javascript} />
+const LinkedIn = (props) => <Img {...props} src={linkedin} />
+const MongoDB = (props) => <Img {...props} src={mongodb} />
+const Nextjs = (props) => <Img {...props} src={nextjs} />
+const Python = (props) => <Img {...props} src={python} />
+const React = (props) => <Img {...props} src={react} />
+const SQL = (props) => <Img {...props} src={sql} />
+const Vercel = (props) => <Img {...props} src={vercel} />
 
 export {
   Ably,
