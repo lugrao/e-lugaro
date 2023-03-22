@@ -6,6 +6,7 @@ import chakraui from "public/icons/Chakra-UI.webp"
 import checkmark from "public/icons/Checkmark.svg"
 import css from "public/icons/CSS.svg"
 import email from "public/icons/Email.svg"
+import external from "public/icons/External.svg"
 import flask from "public/icons/Flask.svg"
 import github from "public/icons/GitHub.svg"
 import html from "public/icons/HTML.svg"
@@ -26,6 +27,7 @@ const ChakraUI = (props) => <Img {...props} src={chakraui} />
 const Checkmark = (props) => <Img {...props} src={checkmark} />
 const CSS = (props) => <Img {...props} src={css} />
 const Email = (props) => <Img {...props} src={email} />
+const External = (props) => <Img {...props} src={external} />
 const Flask = (props) => <Img {...props} src={flask} />
 const GitHub = (props) => <Img {...props} src={github} />
 const HTML = (props) => <Img {...props} src={html} />
@@ -45,6 +47,7 @@ export {
   Checkmark,
   CSS,
   Email,
+  External,
   Flask,
   GitHub,
   HTML,
