@@ -21,24 +21,24 @@ export const List = ({ items, ...props }) => {
 Recursively renders a list with the following structure:
 
 [
-  "Item 1",
+  Item 1,
   [
-    "Item 1.1",
+    Item 1.1,
     [
-      "Item 1.1.1",
+      Item 1.1.1,
       [
-        "Item 1.1.1.1.",
-        "Item 1.1.1.2",
-        "Item 1.1.1.3",
+        Item 1.1.1.1.,
+        Item 1.1.1.2,
+        Item 1.1.1.3,
       ],
-      "Item 1.1.2",
-      "Item 1.1.3",
+      Item 1.1.2,
+      Item 1.1.3,
     ],
-    "Item 1.2",
-    "Item 1.3",
+    Item 1.2,
+    Item 1.3,
   ],
-  "Item 2",
-  "Item 3",
+  Item 2,
+  Item 3,
 ]
 
 */
