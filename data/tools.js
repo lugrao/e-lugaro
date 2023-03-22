@@ -41,5 +41,7 @@ export const tools = [
   <>
     MongoDB <MongoDB />
   </>,
-  "SQL",
+  <>
+    SQL <SQL />
+  </>,
 ]

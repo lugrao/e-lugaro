@@ -15,6 +15,7 @@ import mongodb from "public/icons/MongoDB.svg"
 import nextjs from "public/icons/Next.js.svg"
 import python from "public/icons/Python.svg"
 import react from "public/icons/React.svg"
+import sql from "public/icons/SQL.png"
 import vercel from "public/icons/Vercel.png"
 
 const Img = ({ src }) => <Image width={15} height={15} src={src} />
@@ -34,6 +35,7 @@ const MongoDB = () => <Img src={mongodb} />
 const Nextjs = () => <Img src={nextjs} />
 const Python = () => <Img src={python} />
 const React = () => <Img src={react} />
+const SQL = () => <Img src={sql} />
 const Vercel = () => <Img src={vercel} />
 
 export {
@@ -52,5 +54,6 @@ export {
   Nextjs,
   Python,
   React,
+  SQL,
   Vercel,
 }
