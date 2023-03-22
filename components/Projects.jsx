@@ -1,4 +1,5 @@
 import { projects } from "data/projects"
+import { List } from "components/List"
 
 export function Projects() {
   return (
@@ -7,17 +8,8 @@ export function Projects() {
       {projects.map((project, index) => (
         <div key={index}>
           <h3>{project.title}</h3>
-          <ul>
-            <li>
-              Made with:
-              <ul>
-                {project.madeWith.map((tool, index) => (
-                  <li key={index}>{tool}</li>
-                ))}
-              </ul>
-            </li>
-            <li>Source code: {project.sourceCodeUrl}</li>
-          </ul>
+          <p css={{ overflowWrap: "break-word" }}>{project.description}</p>
+          <List items={project.additionalInfoList} />
         </div>
       ))}
     </div>
