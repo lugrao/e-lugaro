@@ -1,3 +1,12 @@
+import {
+  Flask,
+  Vercel,
+  Nextjs,
+  ChakraUI,
+  Auth0,
+  MongoDB,
+} from "components/icons/lib"
+
 export const projects = [
   {
     title: "Movie Ratings",
@@ -5,8 +14,12 @@ export const projects = [
     description:
       "Web application that allows you to search for movies and their ratings from IMDb, RottenTomatoes, Metacritic, Letterboxd, TMDb and FilmAffinity",
     additionalInfoList: [
-      "Made with Flask",
-      "Deployed via Vercel",
+      <>
+        Made with Flask <Flask />{" "}
+      </>,
+      <>
+        Deployed via Vercel <Vercel />
+      </>,
       <>
         Source code:{" "}
         <a href="https://github.com/lugrao/movie_ratings">
@@ -21,8 +34,15 @@ export const projects = [
     description: "Chat application",
     additionalInfoList: [
       "Made with",
-      ["Next.js", "Ably"],
-      "Deployed via Vercel",
+      [
+        <>
+          Next.js <Nextjs />
+        </>,
+        "Ably",
+      ],
+      <>
+        Deployed via Vercel <Vercel />
+      </>,
       <>
         Source code:{" "}
         <a href="https://github.com/lugrao/chat-app">
@@ -37,8 +57,18 @@ export const projects = [
     description: "Web application for querying NASA's Exoplanet Archive",
     additionalInfoList: [
       "Made with",
-      ["Next.js", "Chakra UI", "React Virtual"],
-      "Deployed via Vercel",
+      [
+        <>
+          Next.js <Nextjs />
+        </>,
+        <>
+          Chakra UI <ChakraUI />
+        </>,
+        "React Virtual",
+      ],
+      <>
+        Deployed via Vercel <Vercel />
+      </>,
       <>
         Source code:{" "}
         <a href="https://github.com/lugrao/nasa-exoplanet-query">
@@ -52,8 +82,12 @@ export const projects = [
     url: "https://www.yunga.musica.ar/",
     description: "Landing page for Yunga, a really cool band from La Plata",
     additionalInfoList: [
-      "Made with Next.js",
-      "Deployed via Vercel",
+      <>
+        Made with Next.js <Nextjs />
+      </>,
+      <>
+        Deployed via Vercel <Vercel />
+      </>,
       <>
         Source code:{" "}
         <a href="https://github.com/lugrao/yunga-web">
@@ -68,8 +102,23 @@ export const projects = [
     description: "Web application for writing along with other people",
     additionalInfoList: [
       "Made with",
-      ["Next.js", "Chakra UI", "Auth0", "MongoDB"],
-      "Deployed via Vercel",
+      [
+        <>
+          Next.js <Nextjs />
+        </>,
+        <>
+          Chakra UI <ChakraUI />
+        </>,
+        <>
+          Auth0 <Auth0 />
+        </>,
+        <>
+          MongoDB <MongoDB />
+        </>,
+      ],
+      <>
+        Deployed via Vercel <Vercel />
+      </>,
       <>
         Source code:{" "}
         <a href="https://github.com/lugrao/cadex">github.com/lugrao/cadex</a>
