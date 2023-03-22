@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import Image from "next/image"
 import profilePic from "public/e.webp"
 import { List } from "components/List"

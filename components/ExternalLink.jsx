@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import { External } from "components/icons/lib"
 
 export const ExternalLink = ({
