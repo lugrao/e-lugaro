@@ -7,6 +7,7 @@ import {
   HTML,
   CSS,
   MongoDB,
+  SQL,
 } from "components/icons/lib"
 
 export const tools = [
