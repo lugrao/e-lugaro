@@ -1,4 +1,12 @@
-export const ExternalLink = ({ children, href, ...props }) => (
+import { External } from "components/icons/lib"
+
+export const ExternalLink = ({
+  children,
+  href,
+  withIcon = false,
+  iconProps,
+  ...props
+}) => (
   <a
     href={href}
     target="_blank"
@@ -6,6 +14,6 @@ export const ExternalLink = ({ children, href, ...props }) => (
     css={{ textDecoration: "none" }}
     {...props}
   >
-    {children}
+    {children} {withIcon && <External {...iconProps} />}
   </a>
 )
