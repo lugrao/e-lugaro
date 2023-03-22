@@ -1,5 +1,5 @@
 function renderItem(item, index) {
-  if (typeof item === "string") {
+  if (!Array.isArray(item)) {
     return <li key={index}>{item}</li>
   }
 
