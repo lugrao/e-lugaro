@@ -16,9 +16,9 @@ const contact = [
   </ExternalLink>,
 ]
 
-export function PersonalInfo() {
+export function PersonalInfo(props) {
   return (
-    <div>
+    <div css={{ textAlign: "center", alignSelf: "center" }} {...props}>
       <Image
         src={profilePic}
         alt="Picture of Ezequiel"
