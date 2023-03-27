@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import { projectList } from "components/projectList"
 import { ExternalLink } from "components/ExternalLink"
 
@@ -6,7 +7,7 @@ export function Projects(props) {
     <div {...props}>
       <h2>Projects</h2>
       {projectList.map((project, index) => (
-        <div key={index}>
+        <div key={index} css={{ padding: "2px 4px 3px" }}>
           <h3>
             <ExternalLink
               href={project.url}
