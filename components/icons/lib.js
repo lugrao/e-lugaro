@@ -23,7 +23,7 @@ import tanstack from "public/icons/TanStack.png"
 import vercel from "public/icons/Vercel.png"
 
 const imageProps = {
-  // placeholder: "blur",
+  placeholder: "blur",
   blurDataURL: base64Icon,
   width: 15,
   height: 15,
