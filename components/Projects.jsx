@@ -9,13 +9,17 @@ export function Projects(props) {
       {projectList.map((project, index) => (
         <div key={index} css={{ padding: "2px 4px 3px" }}>
           <h3>
-            <ExternalLink
-              href={project.url}
-              withIcon={true}
-              iconProps={{ css: { height: 10, width: 10 } }}
-            >
-              {project.title}
-            </ExternalLink>
+            {project.url ? (
+              <ExternalLink
+                href={project.url}
+                withIcon={true}
+                iconProps={{ css: { height: 10, width: 10 } }}
+              >
+                {project.title}
+              </ExternalLink>
+            ) : (
+              <>{project.title}</>
+            )}
           </h3>
           <p>{project.description}</p>
           {project.additionalInfoList}
