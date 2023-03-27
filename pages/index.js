@@ -23,12 +23,12 @@ export default function Home() {
             width: "50%",
             overflow: "scroll",
             boxSizing: "border-box",
-            padding: "30px 10px",
+            padding: "40px 10px",
             [mq.small]: { height: "100%", width: "100%" },
           }}
         >
           <Tools />
-          <Projects />
+          <Projects css={{ paddingTop: "40px" }} />
         </div>
       </div>
     </>
