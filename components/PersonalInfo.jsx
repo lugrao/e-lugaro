@@ -15,11 +15,11 @@ export function PersonalInfo(props) {
       />
       <h1>Ezequiel Lúgaro</h1>
       <p css={{ fontWeight: "bold", fontSize: 20 }}>Web Developer</p>
-      <ul
-        css={{ alignSelf: "center", listStyle: "none", margin: 0, padding: 0 }}
-      >
+      <ul css={{ listStyle: "none", margin: 0, padding: 0 }}>
         {personalInfoList.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li css={{ height: 35 }} key={index}>
+            {item}
+          </li>
         ))}
       </ul>
     </div>
