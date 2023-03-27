@@ -1,11 +1,10 @@
-import { List } from "components/List"
-import { tools } from "data/tools"
+import { toolList } from "components/toolList"
 
 export function Tools(props) {
   return (
     <div {...props}>
       <h2>Tools</h2>
-      <List items={tools} />
+      {toolList}
     </div>
   )
 }
