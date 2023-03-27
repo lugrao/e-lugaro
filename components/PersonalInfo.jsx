@@ -12,6 +12,7 @@ export function PersonalInfo(props) {
         width={150}
         height={150}
         css={{ borderRadius: "50%" }}
+        placeholder="blur"
       />
       <h1>Ezequiel Lúgaro</h1>
       <p css={{ fontWeight: "bold", fontSize: 20 }}>Web Developer</p>
