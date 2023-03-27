@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import { base64Icon } from "public/icons/base64icon"
 import ably from "public/icons/Ably.webp"
 import auth0 from "public/icons/Auth0.svg"
 import chakraui from "public/icons/Chakra-UI.webp"
@@ -20,43 +21,95 @@ import sql from "public/icons/SQL.png"
 import tanstack from "public/icons/TanStack.png"
 import vercel from "public/icons/Vercel.png"
 
-const Img = (props) => (
-  <Image width={15} height={15} {...props} placeholder="blur" />
-)
+const imageProps = {
+  placeholder: "blur",
+  blurDataURL: base64Icon,
+  width: 15,
+  height: 15,
+}
 
-const Ably = (props) => <Img {...props} src={ably} alt="Ably icon" />
-const Auth0 = (props) => <Img {...props} src={auth0} alt="Auth0 icon" />
+const Ably = (props) => (
+  <Image {...imageProps} src={ably} alt="Ably icon" {...props} />
+)
+const Auth0 = (props) => (
+  <Image {...imageProps} src={auth0} alt="Auth0 icon" {...props} />
+)
 const ChakraUI = (props) => (
-  <Img {...props} src={chakraui} alt="ChakraUI icon" />
+  <Image {...imageProps} src={chakraui} alt="ChakraUI icon" {...props} />
 )
 const Checkmark = (props) => (
-  <Img {...props} src={checkmark} alt="Checkmark icon" />
+  <Image {...imageProps} src={checkmark} alt="Checkmark icon" {...props} />
 )
-const CSS = (props) => <Img {...props} src={css} alt="CSS icon" />
-const Email = (props) => <Img {...props} src={email} alt="Email icon" />
+const CSS = (props) => (
+  <Image {...imageProps} src={css} alt="CSS icon" {...props} />
+)
+const Email = (props) => (
+  <Image
+    {...imageProps}
+    src={email}
+    alt="Email icon"
+    placeholder="blur"
+    {...props}
+  />
+)
 const External = (props) => (
-  <Img {...props} src={external} alt="External Link icon" />
+  <Image {...imageProps} src={external} alt="External Link icon" {...props} />
 )
-const Flask = (props) => <Img {...props} src={flask} alt="Flask icon" />
-const GitHub = (props) => <Img {...props} src={github} alt="GitHub icon" />
-const HTML = (props) => <Img {...props} src={html} alt="HTML icon" />
+const Flask = (props) => (
+  <Image {...imageProps} src={flask} alt="Flask icon" {...props} />
+)
+const GitHub = (props) => (
+  <Image
+    {...imageProps}
+    src={github}
+    alt="GitHub icon"
+    placeholder="blur"
+    {...props}
+  />
+)
+const HTML = (props) => (
+  <Image {...imageProps} src={html} alt="HTML icon" {...props} />
+)
 const JavaScript = (props) => (
-  <Img {...props} src={javascript} alt="JavaScript icon" />
+  <Image {...imageProps} src={javascript} alt="JavaScript icon" {...props} />
 )
 const LinkedIn = (props) => (
-  <Img {...props} src={linkedin} alt="LinkedIn icon" />
+  <Image
+    {...imageProps}
+    src={linkedin}
+    alt="LinkedIn icon"
+    placeholder="blur"
+    {...props}
+  />
 )
-const MongoDB = (props) => <Img {...props} src={mongodb} alt="MongoDB icon" />
-const Nextjs = (props) => <Img {...props} src={nextjs} alt="Next.js icon" />
-const Python = (props) => <Img {...props} src={python} alt="Python icon" />
-const React = (props) => <Img {...props} src={react} alt="React icon" />
+const MongoDB = (props) => (
+  <Image {...imageProps} src={mongodb} alt="MongoDB icon" {...props} />
+)
+const Nextjs = (props) => (
+  <Image {...imageProps} src={nextjs} alt="Next.js icon" {...props} />
+)
+const Python = (props) => (
+  <Image {...imageProps} src={python} alt="Python icon" {...props} />
+)
+const React = (props) => (
+  <Image {...imageProps} src={react} alt="React icon" {...props} />
+)
 const SQL = (props) => (
-  <Img {...props} width={12} height={15} src={sql} alt="SQL icon" />
+  <Image
+    {...imageProps}
+    width={12}
+    height={15}
+    src={sql}
+    alt="SQL icon"
+    {...props}
+  />
 )
 const TanStack = (props) => (
-  <Img {...props} src={tanstack} alt="TanStack icon" />
+  <Image {...imageProps} src={tanstack} alt="TanStack icon" {...props} />
 )
-const Vercel = (props) => <Img {...props} src={vercel} alt="Vercel icon" />
+const Vercel = (props) => (
+  <Image {...imageProps} src={vercel} alt="Vercel icon" {...props} />
+)
 
 export {
   Ably,
