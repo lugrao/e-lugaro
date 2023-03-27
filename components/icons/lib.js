@@ -20,7 +20,9 @@ import sql from "public/icons/SQL.png"
 import tanstack from "public/icons/TanStack.png"
 import vercel from "public/icons/Vercel.png"
 
-const Img = (props) => <Image width={15} height={15} {...props} />
+const Img = (props) => (
+  <Image width={15} height={15} {...props} placeholder="blur" />
+)
 
 const Ably = (props) => <Img {...props} src={ably} alt="Ably icon" />
 const Auth0 = (props) => <Img {...props} src={auth0} alt="Auth0 icon" />
