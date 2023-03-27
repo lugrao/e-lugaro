@@ -3,6 +3,7 @@ import Head from "next/head"
 import { PersonalInfo } from "components/PersonalInfo"
 import { Tools } from "components/Tools"
 import { Projects } from "components/Projects"
+import { mq } from "styles/media-queries"
 
 export default function Home() {
   return (
@@ -12,9 +13,20 @@ export default function Home() {
         <title>Ezequiel Lúgaro's personal site</title>
         <link rel="shortcut icon" href="icons/Laptop.svg" />
       </Head>
-      <div css={{ display: "flex" }}>
-        <PersonalInfo css={{ width: "50%" }} />
-        <div css={{ height: "100vh", width: "50%", overflow: "scroll" }}>
+      <div css={{ display: "flex", [mq.small]: { flexDirection: "column" } }}>
+        <PersonalInfo
+          css={{ width: "50%", [mq.small]: { padding: "80px 0 30px" } }}
+        />
+        <div
+          css={{
+            height: "100vh",
+            width: "50%",
+            overflow: "scroll",
+            boxSizing: "border-box",
+            padding: "30px 10px",
+            [mq.small]: { height: "100%", width: "100%" },
+          }}
+        >
           <Tools />
           <Projects />
         </div>
