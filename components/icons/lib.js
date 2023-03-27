@@ -17,6 +17,7 @@ import nextjs from "public/icons/Next.js.svg"
 import python from "public/icons/Python.svg"
 import react from "public/icons/React.svg"
 import sql from "public/icons/SQL.png"
+import tanstack from "public/icons/TanStack.png"
 import vercel from "public/icons/Vercel.png"
 
 const Img = (props) => <Image width={15} height={15} {...props} />
@@ -50,6 +51,9 @@ const React = (props) => <Img {...props} src={react} alt="React icon" />
 const SQL = (props) => (
   <Img {...props} width={12} height={15} src={sql} alt="SQL icon" />
 )
+const TanStack = (props) => (
+  <Img {...props} src={tanstack} alt="TanStack icon" />
+)
 const Vercel = (props) => <Img {...props} src={vercel} alt="Vercel icon" />
 
 export {
@@ -70,5 +74,6 @@ export {
   Python,
   React,
   SQL,
+  TanStack,
   Vercel,
 }

@@ -1,11 +1,12 @@
 import {
   Ably,
-  Flask,
-  Vercel,
-  Nextjs,
-  ChakraUI,
   Auth0,
+  ChakraUI,
+  Flask,
   MongoDB,
+  Nextjs,
+  TanStack,
+  Vercel,
 } from "components/icons/lib"
 
 export const projectList = [
@@ -75,7 +76,9 @@ export const projectList = [
             <li>
               Chakra UI <ChakraUI />
             </li>
-            <li>React Virtual</li>
+            <li>
+              React Virtual <TanStack />
+            </li>
           </ul>
         </li>
         <li>
