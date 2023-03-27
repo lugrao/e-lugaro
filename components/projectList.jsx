@@ -2,9 +2,11 @@ import {
   Ably,
   Auth0,
   ChakraUI,
+  Django,
   Flask,
   MongoDB,
   Nextjs,
+  Python,
   TanStack,
   Vercel,
 } from "components/icons/lib"
@@ -143,6 +145,78 @@ export const projectList = [
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/cadex">github.com/lugrao/cadex</a>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Send To Kindle web",
+    url: "",
+    description: " A send-to-kindle web app",
+    additionalInfoList: (
+      <ul>
+        <li>
+          Made with Flask <Flask />
+        </li>
+        <li>
+          Source code:{" "}
+          <a href="https://github.com/lugrao/send_to_kindle_web_app">
+            github.com/lugrao/send_to_kindle_web_app
+          </a>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Forum",
+    url: "",
+    description: "A forum web application",
+    additionalInfoList: (
+      <ul>
+        <li>
+          Made with Django <Django />
+        </li>
+        <li>
+          Source code:{" "}
+          <a href="https://github.com/lugrao/cs5w-django-forum">
+            github.com/lugrao/cs5w-django-forum
+          </a>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Blackjack CLI",
+    url: "https://replit.com/@lugrao/blackjacken",
+    description: "A command line blackjack game with simplified rules",
+    additionalInfoList: (
+      <ul>
+        <li>
+          Made with Python <Python />
+        </li>
+        <li>
+          Source code:{" "}
+          <a href="https://github.com/lugrao/blackjack">
+            github.com/lugrao/blackjack
+          </a>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Tic-Tac-Toe CLI",
+    url: "https://replit.com/@lugrao/Ta-Te-Ti",
+    description: "A command line tic-tac-toe",
+    additionalInfoList: (
+      <ul>
+        <li>
+          Made with Python <Python />
+        </li>
+        <li>
+          Source code:{" "}
+          <a href="https://github.com/lugrao/ta-te-ti">
+            github.com/lugrao/ta-te-ti
+          </a>
         </li>
       </ul>
     ),
