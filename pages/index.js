@@ -9,6 +9,7 @@ export default function Home() {
     <>
       <Head>
         <meta name="description" content="Ezequiel Lúgaro's personal site." />
+        <title>Ezequiel Lúgaro's personal site</title>
         <link rel="shortcut icon" href="icons/Laptop.svg" />
       </Head>
       <div css={{ display: "flex" }}>
