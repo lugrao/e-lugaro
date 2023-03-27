@@ -47,7 +47,9 @@ const MongoDB = (props) => <Img {...props} src={mongodb} alt="MongoDB icon" />
 const Nextjs = (props) => <Img {...props} src={nextjs} alt="Next.js icon" />
 const Python = (props) => <Img {...props} src={python} alt="Python icon" />
 const React = (props) => <Img {...props} src={react} alt="React icon" />
-const SQL = (props) => <Img {...props} src={sql} alt="SQL icon" />
+const SQL = (props) => (
+  <Img {...props} width={12} height={15} src={sql} alt="SQL icon" />
+)
 const Vercel = (props) => <Img {...props} src={vercel} alt="Vercel icon" />
 
 export {
