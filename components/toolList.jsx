@@ -1,5 +1,6 @@
 import {
   CSS,
+  Django,
   Flask,
   HTML,
   JavaScript,
@@ -31,7 +32,9 @@ export const toolList = (
         <li>
           Flask <Flask />
         </li>
-        <li>Django</li>
+        <li>
+          Django <Django />
+        </li>
       </ul>
     </li>
     <li>

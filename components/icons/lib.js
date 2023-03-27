@@ -6,6 +6,7 @@ import auth0 from "public/icons/Auth0.svg"
 import chakraui from "public/icons/Chakra-UI.webp"
 import checkmark from "public/icons/Checkmark.svg"
 import css from "public/icons/CSS.svg"
+import django from "public/icons/Django.png"
 import email from "public/icons/Email.svg"
 import external from "public/icons/External.svg"
 import flask from "public/icons/Flask.svg"
@@ -22,7 +23,7 @@ import tanstack from "public/icons/TanStack.png"
 import vercel from "public/icons/Vercel.png"
 
 const imageProps = {
-  placeholder: "blur",
+  // placeholder: "blur",
   blurDataURL: base64Icon,
   width: 15,
   height: 15,
@@ -42,6 +43,9 @@ const Checkmark = (props) => (
 )
 const CSS = (props) => (
   <Image {...imageProps} src={css} alt="CSS icon" {...props} />
+)
+const Django = (props) => (
+  <Image {...imageProps} src={django} alt="Django icon" {...props} />
 )
 const Email = (props) => (
   <Image
@@ -117,6 +121,7 @@ export {
   ChakraUI,
   Checkmark,
   CSS,
+  Django,
   Email,
   External,
   Flask,
