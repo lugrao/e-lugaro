@@ -10,39 +10,75 @@ import {
   SQL,
 } from "components/icons/lib"
 
-export const tools = [
-  <>
-    JavaScript <JavaScript />
-  </>,
-  [
-    <>
-      React <React />
-    </>,
-    [
+export const tools2 = [
+  {
+    listItem: (
       <>
-        Next.js <Nextjs />
-      </>,
+        JavaScript <JavaScript />
+      </>
+    ),
+    children: [
+      {
+        listItem: (
+          <>
+            React <React />
+          </>
+        ),
+        children: [
+          {
+            listItem: (
+              <>
+                Next.js <Nextjs />
+              </>
+            ),
+          },
+        ],
+      },
     ],
-  ],
-  <>
-    Python <Python />
-  </>,
-  [
-    <>
-      Flask <Flask />
-    </>,
-    "Django",
-  ],
-  <>
-    HTML <HTML />
-  </>,
-  <>
-    CSS <CSS />
-  </>,
-  <>
-    MongoDB <MongoDB />
-  </>,
-  <>
-    SQL <SQL />
-  </>,
+  },
+  {
+    listItem: (
+      <>
+        Python <Python />
+      </>
+    ),
+    children: [
+      {
+        listItem: (
+          <>
+            Flask <Flask />
+          </>
+        ),
+      },
+      { listItem: "Django" },
+    ],
+  },
+  {
+    listItem: (
+      <>
+        HTML <HTML />
+      </>
+    ),
+  },
+  {
+    listItem: (
+      <>
+        CSS <CSS />
+      </>
+    ),
+  },
+  {
+    listItem: (
+      <>
+        MongoDB <MongoDB />
+      </>
+    ),
+  },
+  {
+    listItem: (
+      <>
+        SQL <SQL />
+      </>
+    ),
+  },
 ]
