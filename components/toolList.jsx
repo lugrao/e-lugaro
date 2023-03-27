@@ -1,12 +1,12 @@
 import {
-  JavaScript,
-  React,
-  Nextjs,
-  Python,
+  CSS,
   Flask,
   HTML,
-  CSS,
+  JavaScript,
   MongoDB,
+  Nextjs,
+  Python,
+  React,
   SQL,
 } from "components/icons/lib"
 
