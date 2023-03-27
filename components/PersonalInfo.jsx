@@ -1,21 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import Image from "next/image"
 import profilePic from "public/e.webp"
-import { List } from "components/List"
-import { Email, GitHub, LinkedIn } from "components/icons/lib"
-import { ExternalLink } from "components/ExternalLink"
-
-const contact = [
-  <ExternalLink href="mailto:ezequiellugaro@gmail.com">
-    Email <Email css={{ height: 13, width: 18 }} />
-  </ExternalLink>,
-  <ExternalLink href="https://github.com/lugrao/">
-    GitHub <GitHub />
-  </ExternalLink>,
-  <ExternalLink href="https://www.linkedin.com/in/elugaro/">
-    LinkedIn <LinkedIn />
-  </ExternalLink>,
-]
+import { personalInfoList } from "components/personalInfoList"
 
 export function PersonalInfo(props) {
   return (
@@ -29,7 +15,13 @@ export function PersonalInfo(props) {
       />
       <h1>Ezequiel Lúgaro</h1>
       <p css={{ fontWeight: "bold", fontSize: 20 }}>Web Developer</p>
-      <List css={{ listStyle: "none" }} items={contact} />
+      <ul
+        css={{ alignSelf: "center", listStyle: "none", margin: 0, padding: 0 }}
+      >
+        {personalInfoList.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   )
 }
