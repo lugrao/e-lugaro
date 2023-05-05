@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+
 import Image from "next/image"
 
 import { base64Icon } from "public/icons/base64icon"
@@ -36,7 +38,13 @@ const Auth0 = (props) => (
   <Image {...imageProps} src={auth0} alt="Auth0 icon" {...props} />
 )
 const ChakraUI = (props) => (
-  <Image {...imageProps} src={chakraui} alt="ChakraUI icon" {...props} />
+  <Image
+    {...imageProps}
+    src={chakraui}
+    alt="ChakraUI icon"
+    css={{ borderRadius: "50%" }}
+    {...props}
+  />
 )
 const Checkmark = (props) => (
   <Image {...imageProps} src={checkmark} alt="Checkmark icon" {...props} />
@@ -60,7 +68,13 @@ const External = (props) => (
   <Image {...imageProps} src={external} alt="External Link icon" {...props} />
 )
 const Flask = (props) => (
-  <Image {...imageProps} src={flask} alt="Flask icon" {...props} />
+  <Image
+    {...imageProps}
+    src={flask}
+    alt="Flask icon"
+    css={{ backgroundColor: "white", borderRadius: "30%" }}
+    {...props}
+  />
 )
 const GitHub = (props) => (
   <Image
@@ -90,7 +104,13 @@ const MongoDB = (props) => (
   <Image {...imageProps} src={mongodb} alt="MongoDB icon" {...props} />
 )
 const Nextjs = (props) => (
-  <Image {...imageProps} src={nextjs} alt="Next.js icon" {...props} />
+  <Image
+    {...imageProps}
+    src={nextjs}
+    alt="Next.js icon"
+    css={{ backgroundColor: "white", borderRadius: "50%" }}
+    {...props}
+  />
 )
 const Python = (props) => (
   <Image {...imageProps} src={python} alt="Python icon" {...props} />
@@ -112,7 +132,13 @@ const TanStack = (props) => (
   <Image {...imageProps} src={tanstack} alt="TanStack icon" {...props} />
 )
 const Vercel = (props) => (
-  <Image {...imageProps} src={vercel} alt="Vercel icon" {...props} />
+  <Image
+    {...imageProps}
+    src={vercel}
+    alt="Vercel icon"
+    css={{ borderRadius: "50%" }}
+    {...props}
+  />
 )
 
 export {
