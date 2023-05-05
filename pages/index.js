@@ -3,6 +3,7 @@ import Head from "next/head"
 import { PersonalInfo } from "components/PersonalInfo"
 import { Tools } from "components/Tools"
 import { Projects } from "components/Projects"
+import { ToggleTheme } from "components/ToggleTheme"
 import { mq } from "styles/media-queries"
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <title>Ezequiel Lúgaro's personal site</title>
         <link rel="shortcut icon" href="icons/Laptop.svg" />
       </Head>
+      <ToggleTheme />
       <div css={{ display: "flex", [mq.small]: { flexDirection: "column" } }}>
         <PersonalInfo
           css={{ width: "50%", [mq.small]: { padding: "80px 0 30px" } }}
