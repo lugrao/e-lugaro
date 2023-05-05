@@ -6,7 +6,7 @@ html, body, #__next {
 }
 
 html {
-  font-weight: "300";
+  font-weight: 300;
   line-height: 180%;
   background-color: var(--color-background);
   color: var(--color-text);  
