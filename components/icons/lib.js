@@ -25,7 +25,6 @@ import tanstack from "public/icons/TanStack.png"
 import vercel from "public/icons/Vercel.png"
 
 const imageProps = {
-  placeholder: "blur",
   blurDataURL: base64Icon,
   width: 15,
   height: 15,
@@ -60,7 +59,6 @@ const Email = (props) => (
     {...imageProps}
     src={email}
     alt="Email icon"
-    placeholder="blur"
     {...props}
   />
 )
@@ -81,7 +79,6 @@ const GitHub = (props) => (
     {...imageProps}
     src={github}
     alt="GitHub icon"
-    placeholder="blur"
     {...props}
   />
 )
@@ -96,7 +93,6 @@ const LinkedIn = (props) => (
     {...imageProps}
     src={linkedin}
     alt="LinkedIn icon"
-    placeholder="blur"
     {...props}
   />
 )
