@@ -5,8 +5,8 @@ export default function Document() {
   return (
     <Html>
       <Head />
+      <ThemeScriptTag />
       <body>
-        <ThemeScriptTag />
         <Main />
         <NextScript />
       </body>
