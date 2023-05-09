@@ -1,4 +1,6 @@
-html, body, #__next {
+html,
+body,
+#__next {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -9,9 +11,13 @@ html {
   font-weight: 300;
   line-height: 180%;
   background-color: var(--color-background);
-  color: var(--color-text);  
+  color: var(--color-text);
 }
 
 a {
   color: var(--color-links);
+}
+
+html, a {
+  transition: all 0.5s ease;
 }
