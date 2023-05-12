@@ -7,10 +7,20 @@ const ThemeProvider = ({ children }) => {
   const [colorMode, setColorMode] = useState(null)
 
   useEffect(() => {
-    // Get (potential) system's color preference
+    // Set initial color mode
+    const root = window.document.documentElement
+    const initialColorValue = root.style.getPropertyValue(
+      "--initial-color-mode"
+    )
+    setColorMode(initialColorValue)
+
+    // Change site's color mode when the system's preferred color mode
+    // changes:
+
+    // Get system's color preference
     const mql = window.matchMedia("(prefers-color-scheme: dark)")
 
-    // Handler that sets system's preferred color mode and remove user's
+    // Handler that  changes the color mode and removes user's 
     // preference from localStorage
     const handleChange = () => {
       const newColorMode = mql.matches ? "dark" : "light"
@@ -19,8 +29,8 @@ const ThemeProvider = ({ children }) => {
       window.localStorage.removeItem("color-mode")
     }
 
-    // Add event listener for changing the color mode when the system's
-    // preference changes
+    // Event listener that waits for system's color mode changes and
+    // executes the handler when that happens
     mql.addEventListener("change", handleChange)
 
     // Remove event listener when component unmounts
@@ -31,7 +41,7 @@ const ThemeProvider = ({ children }) => {
     const root = document.documentElement
     const colors = COLORS
 
-    // update colors in root
+    // Update colors in root
     Object.entries(colors).forEach(([name, colorByTheme]) => {
       const cssVarName = `--color-${name}`
       root.style.setProperty(cssVarName, colorByTheme[newColorMode])
@@ -41,10 +51,10 @@ const ThemeProvider = ({ children }) => {
   function setAndPersistColorMode(newColorMode) {
     setColorMode(newColorMode)
 
-    // update root's colors
+    // Update root's colors
     updateColors(newColorMode)
 
-    // update localStorage's color-mode
+    // Update localStorage's color-mode
     window.localStorage.setItem("color-mode", newColorMode)
   }
 
