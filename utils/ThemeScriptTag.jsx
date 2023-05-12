@@ -8,11 +8,11 @@ function setColorsByTheme() {
   const colorModeKey = "COLOR_MODE_KEY_placeholder"
   const colorModeCssProp = "INITIAL_COLOR_MODE_CSS_PROP_placeholder"
 
-  // check for a system's preferred theme
+  // Check for a system's preferred theme
   const mql = window.matchMedia("(prefers-color-scheme: dark)")
   const prefersDarkFromMQ = mql.matches
 
-  // check localStorage for a theme chosen with the site's toggler
+  // Check localStorage for a theme chosen with the site's toggler
   const persistedPreference = localStorage.getItem(colorModeKey)
 
   let colorMode = "light"
@@ -20,8 +20,10 @@ function setColorsByTheme() {
   const hasUsedToggle = typeof persistedPreference === "string"
 
   if (hasUsedToggle) {
+    // Set color mode according to user's preference
     colorMode = persistedPreference
   } else {
+    // Set color mode according to system's preference
     colorMode = prefersDarkFromMQ ? "dark" : "light"
   }
 
@@ -39,7 +41,7 @@ function setColorsByTheme() {
   })
 }
 
-// This script tag is inserted at build time
+// This script tag is injected at compile-time and executed at run-time
 const ThemeScriptTag = () => {
   // Convert setColorsByTheme() to string
   const boundFn = String(setColorsByTheme)
