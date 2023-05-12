@@ -4,10 +4,14 @@ import { SunIcon } from "components/icons/SunIcon"
 
 const ToggleTheme = () => {
   const { colorMode, setColorMode } = useTheme()
+
   function handleToggle() {
     const newColorMode = colorMode === "dark" ? "light" : "dark"
     setColorMode(newColorMode)
   }
+
+  if (!colorMode) return
+
   return (
     <>
       <div onClick={handleToggle} className="toggle">
@@ -17,9 +21,9 @@ const ToggleTheme = () => {
         .toggle {
           width: 15px;
           height: 15px;
-          position: absolute;
-          right: 0;
+          // right: 0;
           padding: 10px 25px;
+          margin-left: auto;
         }
       `}</style>
     </>
