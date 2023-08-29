@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { projectList } from "components/projectList"
-import { ExternalLink } from "components/ExternalLink"
+import { projectList } from "components/projectList";
+import { ExternalLink } from "components/ExternalLink";
 
 export function Projects(props) {
   return (
@@ -10,11 +10,7 @@ export function Projects(props) {
         <div key={index} css={{ padding: "2px 4px 3px" }}>
           <h3>
             {project.url ? (
-              <ExternalLink
-                href={project.url}
-                withIcon={true}
-                iconProps={{ css: { height: 10, width: 10 } }}
-              >
+              <ExternalLink href={project.url} withIcon={true}>
                 {project.title}
               </ExternalLink>
             ) : (
@@ -26,5 +22,5 @@ export function Projects(props) {
         </div>
       ))}
     </div>
-  )
+  );
 }
