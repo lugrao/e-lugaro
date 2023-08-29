@@ -1,16 +1,3 @@
-import {
-  Ably,
-  Auth0,
-  ChakraUI,
-  Django,
-  Flask,
-  MongoDB,
-  Nextjs,
-  Python,
-  TanStack,
-  Vercel,
-} from "components/icons/lib"
-
 export const projectList = [
   {
     title: "Movie Ratings",
@@ -19,12 +6,8 @@ export const projectList = [
       "Web application that allows you to search for movies and their ratings from IMDb, RottenTomatoes, Metacritic, Letterboxd, TMDb and FilmAffinity",
     additionalInfoList: (
       <ul>
-        <li>
-          Made with Flask <Flask />
-        </li>
-        <li>
-          Deployed via <Vercel />
-        </li>
+        <li>Made with Flask</li>
+        <li>Deployed via Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/movie_ratings">
@@ -43,17 +26,11 @@ export const projectList = [
         <li>
           Made with
           <ul>
-            <li>
-              Next.js <Nextjs />
-            </li>
-            <li>
-              Ably <Ably />
-            </li>
+            <li>Next.js</li>
+            <li>Ably</li>
           </ul>
         </li>
-        <li>
-          Deployed via Vercel <Vercel />
-        </li>
+        <li>Deployed via Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/chat-app">
@@ -72,20 +49,12 @@ export const projectList = [
         <li>
           Made with
           <ul>
-            <li>
-              Next.js <Nextjs />
-            </li>
-            <li>
-              Chakra UI <ChakraUI />
-            </li>
-            <li>
-              React Virtual <TanStack />
-            </li>
+            <li>Next.js</li>
+            <li>Chakra UI</li>
+            <li>React Virtual</li>
           </ul>
         </li>
-        <li>
-          Deployed via Vercel <Vercel />
-        </li>
+        <li>Deployed via Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/nasa-exoplanet-query">
@@ -101,12 +70,8 @@ export const projectList = [
     description: "Landing page for Yunga, a really cool band from La Plata",
     additionalInfoList: (
       <ul>
-        <li>
-          Made with Next.js <Nextjs />
-        </li>
-        <li>
-          Deployed via Vercel <Vercel />
-        </li>
+        <li>Made with Next.js</li>
+        <li>Deployed via Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/yunga-web">
@@ -125,23 +90,13 @@ export const projectList = [
         <li>
           Made with
           <ul>
-            <li>
-              Next.js <Nextjs />
-            </li>
-            <li>
-              Chakra UI <ChakraUI />
-            </li>
-            <li>
-              Auth0 <Auth0 />
-            </li>
-            <li>
-              MongoDB <MongoDB />
-            </li>
+            <li>Next.js</li>
+            <li>Chakra UI</li>
+            <li>Auth0</li>
+            <li>MongoDB</li>
           </ul>
         </li>
-        <li>
-          Deployed via Vercel <Vercel />
-        </li>
+        <li>Deployed via Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/cadex">github.com/lugrao/cadex</a>
@@ -155,9 +110,7 @@ export const projectList = [
     description: " A send-to-kindle web app",
     additionalInfoList: (
       <ul>
-        <li>
-          Made with Flask <Flask />
-        </li>
+        <li>Made with Flask</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/send_to_kindle_web_app">
@@ -173,9 +126,7 @@ export const projectList = [
     description: "A forum web application",
     additionalInfoList: (
       <ul>
-        <li>
-          Made with Django <Django />
-        </li>
+        <li>Made with Django</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/cs5w-django-forum">
@@ -191,9 +142,7 @@ export const projectList = [
     description: "A command line blackjack game with simplified rules",
     additionalInfoList: (
       <ul>
-        <li>
-          Made with Python <Python />
-        </li>
+        <li>Made with Python</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/blackjack">
@@ -209,9 +158,7 @@ export const projectList = [
     description: "A command line tic-tac-toe",
     additionalInfoList: (
       <ul>
-        <li>
-          Made with Python <Python />
-        </li>
+        <li>Made with Python</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/ta-te-ti">
@@ -221,4 +168,4 @@ export const projectList = [
       </ul>
     ),
   },
-]
+];
