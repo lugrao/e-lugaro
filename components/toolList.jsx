@@ -1,53 +1,60 @@
+/** @jsxImportSource @emotion/react */
 import {
   CSS,
   Django,
   Flask,
+  Git,
   HTML,
   JavaScript,
   MongoDB,
   Nextjs,
   Python,
   React,
+  ReactTestingLibrary,
   SQL,
-} from "components/icons/lib"
+} from "components/icons/lib";
 
 export const toolList = (
-  <ul>
+  <ul css={{ listStyle: "none" }}>
     <li>
-      JavaScript <JavaScript />
-      <ul>
+      <JavaScript /> JavaScript
+      <ul css={{ listStyle: "none" }}>
         <li>
-          React <React />
-          <ul>
-            <li>
-              Next.js <Nextjs />
-            </li>
-          </ul>
+          <React /> React
+        </li>
+        <li>
+          <ReactTestingLibrary /> React Testing Library
+        </li>
+        <li>
+          <Nextjs /> Next.js
         </li>
       </ul>
     </li>
     <li>
-      Python <Python />
-      <ul>
+      <Python /> Python
+      <ul css={{ listStyle: "none" }}>
         <li>
-          Flask <Flask />
+          <Flask /> Flask
         </li>
         <li>
-          Django <Django />
+          <Django /> Django
         </li>
       </ul>
     </li>
     <li>
-      HTML <HTML />
+      <HTML /> HTML
     </li>
     <li>
-      CSS <CSS />
+      <CSS /> CSS
     </li>
     <li>
-      MongoDB <MongoDB />
+      <MongoDB /> MongoDB
     </li>
     <li>
-      SQL <SQL />
+      <SQL /> SQL
+    </li>
+    <li>
+      <Git /> Git
     </li>
   </ul>
-)
+);
