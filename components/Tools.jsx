@@ -1,4 +1,4 @@
-import { toolList } from "components/toolList"
+import { toolList } from "components/toolList";
 
 export function Tools(props) {
   return (
@@ -6,5 +6,5 @@ export function Tools(props) {
       <h2>Tools</h2>
       {toolList}
     </div>
-  )
+  );
 }
