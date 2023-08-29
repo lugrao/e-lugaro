@@ -5,6 +5,7 @@ import { Tools } from "components/Tools"
 import { Projects } from "components/Projects"
 import { ToggleTheme } from "components/ToggleTheme"
 import { mq } from "styles/media-queries"
+import { FallbackStyles } from "utils/FallbackStyles"
 
 export default function Home() {
   return (
@@ -13,8 +14,8 @@ export default function Home() {
         <meta name="description" content="Ezequiel Lúgaro's personal site." />
         <title>Ezequiel Lúgaro's personal site</title>
         <link rel="shortcut icon" href="icons/Laptop.svg" />
+        <FallbackStyles />
       </Head>
-      <ToggleTheme />
       <div css={{ display: "flex", [mq.small]: { flexDirection: "column" } }}>
         <PersonalInfo
           css={{ width: "50%", [mq.small]: { padding: "80px 0 30px" } }}
@@ -29,6 +30,7 @@ export default function Home() {
             [mq.small]: { height: "100%", width: "100%" },
           }}
         >
+          {/* <ToggleTheme /> */}
           <Tools />
           <Projects css={{ paddingTop: "40px" }} />
         </div>
