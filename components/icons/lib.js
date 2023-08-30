@@ -23,16 +23,8 @@ import python from "public/icons/Python.svg";
 import react from "public/icons/React.svg";
 import reacttestinglibrary from "public/icons/React Testing Library.svg";
 import sql from "public/icons/SQL.svg";
-import tanstack from "public/icons/TanStack.png";
-import vercel from "public/icons/Vercel.png";
 
 import { useTheme } from "utils/useTheme";
-
-const imageProps = {
-  blurDataURL: base64Icon,
-  width: 15,
-  height: 15,
-};
 
 const Icon = ({ src, alt, width = 15, height = 15, ...props }) => {
   const { colorMode } = useTheme();
@@ -86,18 +78,6 @@ const ReactTestingLibrary = (props) => (
   <Icon src={reacttestinglibrary} alt="React Testing Library icon" {...props} />
 );
 const SQL = (props) => <Icon src={sql} alt="SQL icon" {...props} />;
-const TanStack = (props) => (
-  <Image {...imageProps} src={tanstack} alt="TanStack icon" {...props} />
-);
-const Vercel = (props) => (
-  <Image
-    {...imageProps}
-    src={vercel}
-    alt="Vercel icon"
-    css={{ borderRadius: "50%" }}
-    {...props}
-  />
-);
 
 export {
   Ably,
@@ -120,6 +100,4 @@ export {
   React,
   ReactTestingLibrary,
   SQL,
-  TanStack,
-  Vercel,
 };
