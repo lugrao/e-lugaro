@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
-import Head from "next/head"
-import { PersonalInfo } from "components/PersonalInfo"
-import { Tools } from "components/Tools"
-import { Projects } from "components/Projects"
-import { ToggleTheme } from "components/ToggleTheme"
-import { mq } from "styles/media-queries"
-import { FallbackStyles } from "utils/FallbackStyles"
+import Head from "next/head";
+import { PersonalInfo } from "components/PersonalInfo";
+import { Tools } from "components/Tools";
+import { Projects } from "components/Projects";
+import { ToggleTheme } from "components/ToggleTheme";
+import { mq } from "styles/media-queries";
+import { FallbackStyles } from "utils/FallbackStyles";
 
 export default function Home() {
   return (
@@ -27,6 +27,7 @@ export default function Home() {
             overflow: "scroll",
             boxSizing: "border-box",
             padding: "40px 10px",
+            overflow: "auto",
             [mq.small]: { height: "100%", width: "100%" },
           }}
         >
@@ -36,5 +37,5 @@ export default function Home() {
         </div>
       </div>
     </>
-  )
+  );
 }
