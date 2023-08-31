@@ -16,6 +16,7 @@ export const projectList = [
         </li>
       </ul>
     ),
+    imageSrc: "/images/projects/Movie Ratings.webp"
   },
   {
     title: "Chat App",
@@ -39,6 +40,7 @@ export const projectList = [
         </li>
       </ul>
     ),
+    imageSrc: "/images/projects/Chat App.webp"
   },
   {
     title: "NASA Exoplanet Query",
@@ -63,6 +65,7 @@ export const projectList = [
         </li>
       </ul>
     ),
+    imageSrc: "/images/projects/NASA Exoplanet Query.webp"
   },
   {
     title: "Yunga",
@@ -80,6 +83,7 @@ export const projectList = [
         </li>
       </ul>
     ),
+    imageSrc: "/images/projects/Yunga Web.webp"
   },
   {
     title: "Cadex",
@@ -103,6 +107,7 @@ export const projectList = [
         </li>
       </ul>
     ),
+    imageSrc: "/images/projects/Cadex.webp"
   },
   {
     title: "Send To Kindle web",
@@ -151,6 +156,7 @@ export const projectList = [
         </li>
       </ul>
     ),
+    imageSrc: "/images/projects/BlackJack CLI.webp"
   },
   {
     title: "Tic-Tac-Toe CLI",
@@ -167,5 +173,6 @@ export const projectList = [
         </li>
       </ul>
     ),
+    imageSrc: "/images/projects/Tic-Tac-Toe CLI.webp"
   },
 ];
