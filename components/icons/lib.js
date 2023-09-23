@@ -18,11 +18,13 @@ import html from "public/icons/HTML.svg";
 import javascript from "public/icons/JavaScript.svg";
 import linkedin from "public/icons/LinkedIn.svg";
 import mongodb from "public/icons/MongoDB.svg";
+import moon from "public/icons/Moon.svg";
 import nextjs from "public/icons/Next.js.svg";
 import python from "public/icons/Python.svg";
 import react from "public/icons/React.svg";
 import reacttestinglibrary from "public/icons/React Testing Library.svg";
 import sql from "public/icons/SQL.svg";
+import sun from "public/icons/Sun.svg";
 
 import { useTheme } from "utils/useTheme";
 
@@ -71,6 +73,7 @@ const LinkedIn = (props) => (
   <Icon src={linkedin} alt="LinkedIn icon" {...props} />
 );
 const MongoDB = (props) => <Icon src={mongodb} alt="MongoDB icon" {...props} />;
+const Moon = (props) => <Icon src={moon} alt="Moon icon" {...props} />;
 const Nextjs = (props) => <Icon src={nextjs} alt="Next.js icon" {...props} />;
 const Python = (props) => <Icon src={python} alt="Python icon" {...props} />;
 const React = (props) => <Icon src={react} alt="React icon" {...props} />;
@@ -78,6 +81,7 @@ const ReactTestingLibrary = (props) => (
   <Icon src={reacttestinglibrary} alt="React Testing Library icon" {...props} />
 );
 const SQL = (props) => <Icon src={sql} alt="SQL icon" {...props} />;
+const Sun = (props) => <Icon src={sun} alt="Sun icon" {...props} />;
 
 export {
   Ably,
@@ -95,9 +99,11 @@ export {
   JavaScript,
   LinkedIn,
   MongoDB,
+  Moon,
   Nextjs,
   Python,
   React,
   ReactTestingLibrary,
   SQL,
+  Sun,
 };
