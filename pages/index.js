@@ -6,8 +6,10 @@ import { Projects } from "components/Projects";
 import { ToggleTheme } from "components/ToggleTheme";
 import { mq } from "styles/media-queries";
 import { FallbackStyles } from "utils/FallbackStyles";
+import { useWindowDimensions } from "utils/useWindowDimensions";
 
 export default function Home() {
+  const { width } = useWindowDimensions();
   return (
     <>
       <Head>
@@ -17,6 +19,7 @@ export default function Home() {
         <FallbackStyles />
       </Head>
       <div css={{ display: "flex", [mq.small]: { flexDirection: "column" } }}>
+        {width < 992 && <ToggleTheme css={{marginTop: 10, marginRight: 10}} />}
         <PersonalInfo
           css={{ width: "50%", [mq.small]: { padding: "80px 0 30px" } }}
         />
@@ -26,13 +29,13 @@ export default function Home() {
             width: "50%",
             overflow: "scroll",
             boxSizing: "border-box",
-            padding: "40px 10px",
+            padding: "10px 10px 40px",
             overflow: "auto",
             [mq.small]: { height: "100%", width: "100%" },
           }}
         >
-          {/* <ToggleTheme /> */}
-          <Tools />
+          {width > 991 && <ToggleTheme />}
+          <Tools css={{paddingTop: 30,}} />
           <Projects css={{ paddingTop: "40px" }} />
         </div>
       </div>
