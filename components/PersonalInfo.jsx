@@ -25,7 +25,16 @@ export function PersonalInfo(props) {
       />
       <h1>Ezequiel Lúgaro</h1>
       <p css={{ fontWeight: "bold", fontSize: 20 }}>Web Developer</p>
-      <ul css={{ listStyle: "none", margin: 0, padding: 0, textAlign: "left" }}>
+      <ul
+        css={{
+          listStyle: "none",
+          margin: 0,
+          padding: 0,
+          textAlign: "left",
+          display: "flex",
+          gap: 15,
+        }}
+      >
         {personalInfoList.map((item, index) => (
           <li css={{ height: 35 }} key={index}>
             {item}
