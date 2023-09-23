@@ -1,17 +1,17 @@
 /** @jsxImportSource @emotion/react */
-import { Email, GitHub, LinkedIn } from "components/icons/lib"
-import { ExternalLink } from "components/ExternalLink"
+import { Email, GitHub, LinkedIn } from "components/icons/lib";
+import { ExternalLink } from "components/ExternalLink";
 
 export const personalInfoList = [
   <address css={{ fontStyle: "normal" }}>
     <ExternalLink href="mailto:ezequiellugaro@gmail.com">
-    <Email css={{ height: 13, width: 18 }} /> Email
+      <Email css={{ height: 16, width: 22 }} />
     </ExternalLink>
   </address>,
   <ExternalLink href="https://github.com/lugrao/">
-    <GitHub /> GitHub
+    <GitHub css={{ height: 20, width: 20 }} />
   </ExternalLink>,
   <ExternalLink href="https://www.linkedin.com/in/elugaro/">
-    <LinkedIn /> LinkedIn
+    <LinkedIn css={{ height: 20, width: 20 }} />
   </ExternalLink>,
-]
+];
