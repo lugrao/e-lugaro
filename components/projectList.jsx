@@ -156,7 +156,6 @@ export const projectList = [
         </li>
       </ul>
     ),
-    imageSrc: "/images/projects/BlackJack CLI.webp",
   },
   {
     title: "Tic-Tac-Toe CLI",
@@ -173,6 +172,5 @@ export const projectList = [
         </li>
       </ul>
     ),
-    imageSrc: "/images/projects/Tic-Tac-Toe CLI.webp",
   },
 ];
