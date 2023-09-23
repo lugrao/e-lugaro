@@ -23,3 +23,17 @@ html,
 a {
   transition: all 0.5s ease;
 }
+
+.project-box {
+  box-shadow: 0px 0px 5px 1px var(--color-shadows),
+    0px 0px 5px 1px var(--color-shadows);
+  background-color: var(--color-foreground);
+}
+
+.toggle:hover {
+  background-color: var(--color-shadows);
+}
+
+.project-image {
+  border-bottom: 1px solid var(--color-shadows);
+}
