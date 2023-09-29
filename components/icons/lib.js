@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-
 import Image from "next/image";
 
 import { base64Icon } from "public/icons/base64icon";
@@ -37,7 +35,7 @@ const Icon = ({ src, alt, width = 15, height = 15, ...props }) => {
       height={height}
       src={src}
       alt={alt}
-      css={{ filter: colorMode === "dark" && "invert(100%)" }}
+      style={{ filter: colorMode === "dark" && "invert(100%)" }}
       {...props}
     />
   );
@@ -49,7 +47,7 @@ const ChakraUI = (props) => (
   <Icon
     src={chakraui}
     alt="ChakraUI icon"
-    css={{ borderRadius: "50%" }}
+    style={{ borderRadius: "50%" }}
     {...props}
   />
 );

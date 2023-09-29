@@ -1,5 +1,5 @@
-/** @jsxImportSource @emotion/react */
-import { External } from "components/icons/lib"
+import styles from "./ExternalLink.module.css";
+import { External } from "components/icons/lib";
 
 export const ExternalLink = ({
   children,
@@ -8,13 +8,7 @@ export const ExternalLink = ({
   iconProps,
   ...props
 }) => (
-  <a
-    href={href}
-    target="_blank"
-    {...props}
-    css={{ textDecoration: "none" }}
-    {...props}
-  >
+  <a className={styles.link} href={href} target="_blank" {...props}>
     {children} {withIcon && <External {...iconProps} />}
   </a>
-)
+);

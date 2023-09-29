@@ -1,40 +1,30 @@
 /** @jsxImportSource @emotion/react */
+import styles from "./ToggleTheme.module.css";
 import { useTheme } from "utils/useTheme";
 import { Moon, Sun } from "./icons/lib";
 
 const ToggleTheme = (props) => {
   const { colorMode, setColorMode } = useTheme();
+  const inconSize = {
+    width: 23,
+    height: 23,
+  };
 
   function handleToggle() {
     const newColorMode = colorMode === "dark" ? "light" : "dark";
     setColorMode(newColorMode);
   }
-  const iconStyles = {
-    width: 23,
-    height: 23,
-  }
+
   if (!colorMode) return;
 
   return (
     <>
-      <div
-        className="toggle"
-        onClick={handleToggle}
-        css={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: 50,
-          height: 50,
-          borderRadius: 50,
-          marginLeft: "auto",
-          ":hover": {
-            backgroundcolor: "red",
-          },
-        }}
-        {...props}
-      >
-        {colorMode === "light" ? <Sun css={iconStyles} /> : <Moon css={iconStyles}/>}
+      <div className={styles.toggle} onClick={handleToggle} {...props}>
+        {colorMode === "light" ? (
+          <Sun {...inconSize} />
+        ) : (
+          <Moon {...inconSize} />
+        )}
       </div>
     </>
   );
