@@ -1,20 +1,20 @@
 import "styles/global.css";
-import { COLORS } from "styles/colors";
 import { Merriweather_Sans } from "next/font/google";
 import { ThemeProvider } from "utils/ThemeProvider";
-// import { Html, Head, Main, NextScript } from "next/document"
 import { ThemeScriptTag } from "utils/ThemeScriptTag";
+import { FallbackStyles } from "utils/FallbackStyles";
 
 const merriweather_sans = Merriweather_Sans({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
-    <ThemeProvider>
-      <html lang="en" className={merriweather_sans.className}>
+    <html lang="en" className={merriweather_sans.className}>
+      <body>
+        <FallbackStyles />
         <ThemeScriptTag />
-        <body>{children}</body>
-      </html>
-    </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
+    </html>
   );
 }
 
