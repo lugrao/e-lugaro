@@ -1,0 +1,19 @@
+.projects_container {
+  padding-top: 40px;
+}
+
+.project_box {
+  box-shadow: 0px 0px 5px 1px var(--color-shadows),
+    0px 0px 5px 1px var(--color-shadows);
+  background-color: var(--color-foreground);
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.project_image {
+  border-bottom: 1px solid var(--color-shadows);
+}
+
+.project_info {
+  padding: 20px 30px 20px;
+}
