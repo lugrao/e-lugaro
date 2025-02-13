@@ -5,20 +5,22 @@
   .tools_and_projects_container {
     height: 100vh;
     width: 50%;
+    padding: 10px 60px 40px 10px;
     overflow: scroll;
     box-sizing: border-box;
-    padding: 10px 10px 40px;
     overflow: auto;
   }
   
   @media (max-width: 991px) {
     .page_container {
       flex-direction: column;
+      padding: 0px 20px;
     }
   
     .tools_and_projects_container {
       height: 100%;
       width: 100%;
+      padding: 10px 10px 40px;
     }
   }
   
