@@ -45,30 +45,6 @@ export const projectList = [
     imageSrc: "/images/projects/Capsule Corp. Dashboard.webp",
   },
   {
-    title: "Chat App",
-    url: "https://chat-app-lugrao.vercel.app/",
-    description: "Chat application",
-    additionalInfoList: (
-      <ul>
-        <li>
-          Made with
-          <ul>
-            <li>Next.js</li>
-            <li>Ably</li>
-          </ul>
-        </li>
-        <li>Deployed via Vercel</li>
-        <li>
-          Source code:{" "}
-          <a href="https://github.com/lugrao/chat-app">
-            github.com/lugrao/chat-app
-          </a>
-        </li>
-      </ul>
-    ),
-    imageSrc: "/images/projects/Chat App.webp",
-  },
-  {
     title: "NASA Exoplanet Query",
     url: "https://nasa-exoplanet-query.vercel.app/",
     description: "Web application for querying NASA's Exoplanet Archive",
@@ -110,6 +86,30 @@ export const projectList = [
       </ul>
     ),
     imageSrc: "/images/projects/Yunga Web.webp",
+  },
+  {
+    title: "Chat App",
+    url: "https://chat-app-lugrao.vercel.app/",
+    description: "Chat application",
+    additionalInfoList: (
+      <ul>
+        <li>
+          Made with
+          <ul>
+            <li>Next.js</li>
+            <li>Ably</li>
+          </ul>
+        </li>
+        <li>Deployed via Vercel</li>
+        <li>
+          Source code:{" "}
+          <a href="https://github.com/lugrao/chat-app">
+            github.com/lugrao/chat-app
+          </a>
+        </li>
+      </ul>
+    ),
+    imageSrc: "/images/projects/Chat App.webp",
   },
   {
     title: "Cadex",
