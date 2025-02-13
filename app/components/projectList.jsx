@@ -19,6 +19,32 @@ export const projectList = [
     imageSrc: "/images/projects/Movie Ratings.webp",
   },
   {
+    title: "Capsule Corp. Dashboard",
+    url: "https://nao04-dashboard.vercel.app/",
+    description:
+      "A dashboard for a fictional company. It shows the company's sales, products, and invoices",
+    additionalInfoList: (
+      <ul>
+        <li>
+          Made with
+          <ul>
+            <li>TypeScript</li>
+            <li>Vite</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </li>
+        <li>Deployed via Vercel</li>
+        <li>
+          Source code:{" "}
+          <a href="https://github.com/lugrao/nao04">github.com/lugrao/nao04</a>
+        </li>
+      </ul>
+    ),
+    imageSrc: "/images/projects/Capsule Corp. Dashboard.webp",
+  },
+  {
     title: "Chat App",
     url: "https://chat-app-lugrao.vercel.app/",
     description: "Chat application",
