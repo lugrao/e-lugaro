@@ -1,25 +1,18 @@
-/** @jsxImportSource @emotion/react */
-import { projectList } from "components/projectList";
-import { ExternalLink } from "components/ExternalLink";
+import styles from "./Projects.module.css";
+import { projectList } from "app/components/projectList";
+import { ExternalLink } from "app/components/ExternalLink";
 import Image from "next/image";
 
 export function Projects(props) {
   return (
-    <div {...props}>
+    <div className={styles.projects_container} {...props}>
       <h2>Projects</h2>
       {projectList.map((project, index) => (
-        <div
-          className="project-box"
-          key={index}
-          css={{
-            marginBottom: 40,
-            borderRadius: 10,
-          }}
-        >
+        <div className={styles.project_box} key={index}>
           {project.imageSrc && (
             <a href={project.url} target="_blank">
               <Image
-                className="project-image"
+                className={styles.project_image}
                 src={project.imageSrc}
                 alt={`${project.title} screen`}
                 height={344}
@@ -34,7 +27,7 @@ export function Projects(props) {
               />
             </a>
           )}
-          <div css={{ padding: "20px 30px 20px" }}>
+          <div className={styles.project_info}>
             <h3>
               {project.url ? (
                 <ExternalLink href={project.url} withIcon={true}>

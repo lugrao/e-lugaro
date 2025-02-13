@@ -1,4 +1,4 @@
-/** @jsxImportSource @emotion/react */
+import styles from "./toolList.module.css";
 import {
   CSS,
   Django,
@@ -12,13 +12,13 @@ import {
   React,
   ReactTestingLibrary,
   SQL,
-} from "components/icons/lib";
+} from "app/components/icons/lib";
 
 export const toolList = (
-  <ul css={{ listStyle: "none" }}>
+  <ul className={styles.tool_list}>
     <li>
       <JavaScript /> JavaScript
-      <ul css={{ listStyle: "none" }}>
+      <ul className={styles.tool_list}>
         <li>
           <React /> React
         </li>
@@ -32,7 +32,7 @@ export const toolList = (
     </li>
     <li>
       <Python /> Python
-      <ul css={{ listStyle: "none" }}>
+      <ul className={styles.tool_list}>
         <li>
           <Flask /> Flask
         </li>
