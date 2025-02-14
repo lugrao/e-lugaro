@@ -24,6 +24,7 @@ import reacttestinglibrary from "public/icons/React Testing Library.svg";
 import redux from "public/icons/Redux.svg";
 import sql from "public/icons/SQL.svg";
 import sun from "public/icons/Sun.svg";
+import tailwindcss from "public/icons/Tailwind CSS.svg";
 import typescript from "public/icons/TypeScript.svg";
 
 import { useTheme } from "utils/useTheme";
@@ -83,6 +84,9 @@ const ReactTestingLibrary = (props) => (
 const Redux = (props) => <Icon src={redux} alt="Redux icon" {...props} />;
 const SQL = (props) => <Icon src={sql} alt="SQL icon" {...props} />;
 const Sun = (props) => <Icon src={sun} alt="Sun icon" {...props} />;
+const TailwindCSS = (props) => (
+  <Icon src={sun} alt="Tailwind CSS icon" {...props} />
+);
 const TypeScript = (props) => (
   <Icon src={typescript} alt="TypeScript icon" {...props} />
 );
@@ -111,5 +115,6 @@ export {
   Redux,
   SQL,
   Sun,
+  TailwindCSS,
   TypeScript,
 };
