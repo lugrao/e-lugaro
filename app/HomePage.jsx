@@ -12,10 +12,9 @@ export default function HomePage() {
   return (
     <>
       <div className={styles.page_container}>
-        {width < 992 && <ToggleTheme />}
+        <ToggleTheme />
         <PersonalInfo />
         <div className={styles.tools_and_projects_container}>
-          {width > 991 && <ToggleTheme />}
           <Tools />
           <Projects />
         </div>
