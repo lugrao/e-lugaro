@@ -13,6 +13,7 @@ import {
   ReactTestingLibrary,
   Redux,
   SQL,
+  TailwindCSS,
   TypeScript,
 } from "app/components/icons/lib";
 
@@ -51,6 +52,11 @@ export const toolList = (
     </li>
     <li>
       <CSS /> CSS
+      <ul className={styles.tool_list}>
+        <li>
+          <TailwindCSS /> Tailwind CSS
+        </li>
+      </ul>
     </li>
     <li>
       <MongoDB /> MongoDB
