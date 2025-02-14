@@ -23,6 +23,7 @@ import react from "public/icons/React.svg";
 import reacttestinglibrary from "public/icons/React Testing Library.svg";
 import sql from "public/icons/SQL.svg";
 import sun from "public/icons/Sun.svg";
+import typescript from "public/icons/TypeScript.svg";
 
 import { useTheme } from "utils/useTheme";
 
@@ -80,6 +81,9 @@ const ReactTestingLibrary = (props) => (
 );
 const SQL = (props) => <Icon src={sql} alt="SQL icon" {...props} />;
 const Sun = (props) => <Icon src={sun} alt="Sun icon" {...props} />;
+const TypeScript = (props) => (
+  <Icon src={typescript} alt="TypeScript icon" {...props} />
+);
 
 export {
   Ably,
@@ -104,4 +108,5 @@ export {
   ReactTestingLibrary,
   SQL,
   Sun,
+  TypeScript,
 };
