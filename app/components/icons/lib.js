@@ -85,7 +85,7 @@ const Redux = (props) => <Icon src={redux} alt="Redux icon" {...props} />;
 const SQL = (props) => <Icon src={sql} alt="SQL icon" {...props} />;
 const Sun = (props) => <Icon src={sun} alt="Sun icon" {...props} />;
 const TailwindCSS = (props) => (
-  <Icon src={sun} alt="Tailwind CSS icon" {...props} />
+  <Icon src={tailwindcss} alt="Tailwind CSS icon" {...props} />
 );
 const TypeScript = (props) => (
   <Icon src={typescript} alt="TypeScript icon" {...props} />
