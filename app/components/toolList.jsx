@@ -12,12 +12,13 @@ import {
   React,
   ReactTestingLibrary,
   SQL,
+  TypeScript,
 } from "app/components/icons/lib";
 
 export const toolList = (
   <ul className={styles.tool_list}>
     <li>
-      <JavaScript /> JavaScript
+      <JavaScript /> JavaScript / <TypeScript /> TypeScript
       <ul className={styles.tool_list}>
         <li>
           <React /> React
