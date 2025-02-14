@@ -11,6 +11,7 @@ import {
   Python,
   React,
   ReactTestingLibrary,
+  Redux,
   SQL,
   TypeScript,
 } from "app/components/icons/lib";
@@ -28,6 +29,9 @@ export const toolList = (
         </li>
         <li>
           <Nextjs /> Next.js
+        </li>
+        <li>
+          <Redux /> Redux
         </li>
       </ul>
     </li>
