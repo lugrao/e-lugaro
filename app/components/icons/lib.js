@@ -21,8 +21,11 @@ import nextjs from "public/icons/Next.js.svg";
 import python from "public/icons/Python.svg";
 import react from "public/icons/React.svg";
 import reacttestinglibrary from "public/icons/React Testing Library.svg";
+import redux from "public/icons/Redux.svg";
 import sql from "public/icons/SQL.svg";
 import sun from "public/icons/Sun.svg";
+import tailwindcss from "public/icons/Tailwind CSS.svg";
+import typescript from "public/icons/TypeScript.svg";
 
 import { useTheme } from "utils/useTheme";
 
@@ -78,8 +81,15 @@ const React = (props) => <Icon src={react} alt="React icon" {...props} />;
 const ReactTestingLibrary = (props) => (
   <Icon src={reacttestinglibrary} alt="React Testing Library icon" {...props} />
 );
+const Redux = (props) => <Icon src={redux} alt="Redux icon" {...props} />;
 const SQL = (props) => <Icon src={sql} alt="SQL icon" {...props} />;
 const Sun = (props) => <Icon src={sun} alt="Sun icon" {...props} />;
+const TailwindCSS = (props) => (
+  <Icon src={tailwindcss} alt="Tailwind CSS icon" {...props} />
+);
+const TypeScript = (props) => (
+  <Icon src={typescript} alt="TypeScript icon" {...props} />
+);
 
 export {
   Ably,
@@ -102,6 +112,9 @@ export {
   Python,
   React,
   ReactTestingLibrary,
+  Redux,
   SQL,
   Sun,
+  TailwindCSS,
+  TypeScript,
 };

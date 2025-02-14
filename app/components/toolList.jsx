@@ -11,13 +11,16 @@ import {
   Python,
   React,
   ReactTestingLibrary,
+  Redux,
   SQL,
+  TailwindCSS,
+  TypeScript,
 } from "app/components/icons/lib";
 
 export const toolList = (
   <ul className={styles.tool_list}>
     <li>
-      <JavaScript /> JavaScript
+      <JavaScript /> JavaScript / <TypeScript /> TypeScript
       <ul className={styles.tool_list}>
         <li>
           <React /> React
@@ -27,6 +30,9 @@ export const toolList = (
         </li>
         <li>
           <Nextjs /> Next.js
+        </li>
+        <li>
+          <Redux /> Redux
         </li>
       </ul>
     </li>
@@ -46,6 +52,11 @@ export const toolList = (
     </li>
     <li>
       <CSS /> CSS
+      <ul className={styles.tool_list}>
+        <li>
+          <TailwindCSS /> Tailwind CSS
+        </li>
+      </ul>
     </li>
     <li>
       <MongoDB /> MongoDB
