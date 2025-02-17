@@ -1,23 +1,20 @@
 .page_container {
   display: flex;
   flex-direction: column;
+  padding: 0px 20px;
 }
 
 .tools_and_projects_container {
-  width: 40%;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 10px 60px 40px 10px;
+  padding: 10px 10px 40px;
   box-sizing: border-box;
 }
 
 @media (max-width: 991px) {
-  .page_container {
-    padding: 0px 20px;
-  }
-
   .tools_and_projects_container {
     height: 100%;
     width: 100%;
-    padding: 10px 10px 40px;
+    padding: 10px 5px 40px;
   }
 }
