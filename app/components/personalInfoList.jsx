@@ -4,7 +4,7 @@ import { ExternalLink } from "app/components/ExternalLink";
 export const personalInfoList = [
   <address>
     <ExternalLink href="mailto:ezequiellugaro@gmail.com">
-      <Email height={16} width={22} />
+      <Email height={27} width={27} />
     </ExternalLink>
   </address>,
   <ExternalLink href="https://github.com/lugrao/">
