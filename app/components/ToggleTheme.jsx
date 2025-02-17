@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import styles from "./ToggleTheme.module.css";
 import { useTheme } from "utils/useTheme";
@@ -16,7 +16,7 @@ const ToggleTheme = (props) => {
     setColorMode(newColorMode);
   }
 
-  if (!colorMode) return;
+  if (!colorMode) return <div className={styles.toggle}></div>;
 
   return (
     <>
