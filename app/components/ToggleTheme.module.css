@@ -11,5 +11,5 @@
 }
 
 .toggle:hover {
-  background-color: var(--color-shadows);
+  background-color: var(--color-hover);
 }
