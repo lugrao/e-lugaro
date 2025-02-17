@@ -88,6 +88,29 @@ export const projectList = [
     imageSrc: "/images/projects/Yunga Web.webp",
   },
   {
+    title: "Ventilador",
+    url: "https://ventilador.vercel.app/",
+    description: "A fan noise website",
+    additionalInfoList: (
+      <ul>
+        <li>
+          Made with
+          <ul>
+            <li>Bootstrap</li>
+          </ul>
+        </li>
+        <li>Deployed via Vercel</li>
+        <li>
+          Source code:{" "}
+          <a href="https://github.com/lugrao/ventilador">
+            github.com/lugrao/ventilador
+          </a>
+        </li>
+      </ul>
+    ),
+    imageSrc: "/images/projects/Ventilador.webp",
+  },
+  {
     title: "Chat App",
     url: "https://chat-app-lugrao.vercel.app/",
     description: "Chat application",
