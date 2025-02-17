@@ -6,7 +6,7 @@ import Image from "next/image";
 export function Projects(props) {
   return (
     <div className={styles.projects_container} {...props}>
-      <h2>Projects</h2>
+      <h2 className={styles.heading}>Projects</h2>
       {projectList.map((project, index) => (
         <div className={styles.project_box} key={index}>
           {project.imageSrc && (
