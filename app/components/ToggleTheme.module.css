@@ -8,8 +8,10 @@
   height: 50px;
   border-radius: 50px;
   margin-left: auto;
+  transition: background-color 0.5s;
 }
 
 .toggle:hover {
-  background-color: var(--color-shadows);
+  background-color: var(--color-hover);
+  transition: background-color 0.5s;
 }

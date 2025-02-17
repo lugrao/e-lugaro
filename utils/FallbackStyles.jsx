@@ -14,6 +14,7 @@ const FallbackStyles = () => {
             --color-foreground: ${COLORS.foreground.light};
             --color-shadows: ${COLORS.shadows.light};
             --color-links: ${COLORS.links.light};
+            --color-hover: ${COLORS.hover.light};
         }
       `}
     </style>
