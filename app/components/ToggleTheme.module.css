@@ -13,9 +13,3 @@
 .toggle:hover {
   background-color: var(--color-shadows);
 }
-
-@media (max-width: 991px) {
-  .toggle {
-    flex-direction: column;
-  }
-}
