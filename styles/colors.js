@@ -24,6 +24,10 @@ export const COLORS = {
     light: "#e8e8e8",
     dark: "#061429",
   },
+  hover: {
+    light: "#e8e8e8",
+    dark: "#202d40",
+  },
 };
 
 // Useful links:
