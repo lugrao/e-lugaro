@@ -1,5 +1,31 @@
 export const projectList = [
   {
+    title: "Juan Ignacio Cali's Website",
+    url: "https://juanignaciocali.com/",
+    description:
+      "Website for Juan Ignacio Cali, a film director and youtuber based in Buenos Aires",
+    additionalInfoList: (
+      <ul>
+        <li>
+          Made with
+          <ul>
+            <li>Next.js</li>
+            <li>Sanity CMS</li>
+          </ul>
+        </li>
+        <li>Deployed via Vercel</li>
+        <li>
+          Source code:{" "}
+          <a href="https://github.com/franprince/jic">
+            github.com/franprince/jic
+          </a>
+        </li>
+      </ul>
+    ),
+    imageSrc: "/images/projects/Juan Ignacio Cali.webp",
+  },
+
+  {
     title: "Movie Ratings",
     url: "https://movie-ratings.vercel.app/",
     description:
