@@ -13,7 +13,7 @@ export const projectList = [
             <li>Sanity CMS</li>
           </ul>
         </li>
-        <li>Deployed via Vercel</li>
+        <li>Hosted and deployed on Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/franprince/jic">
@@ -33,7 +33,7 @@ export const projectList = [
     additionalInfoList: (
       <ul>
         <li>Made with Flask</li>
-        <li>Deployed via Vercel</li>
+        <li>Hosted and deployed on Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/movie_ratings">
@@ -61,7 +61,7 @@ export const projectList = [
             <li>Tailwind CSS</li>
           </ul>
         </li>
-        <li>Deployed via Vercel</li>
+        <li>Hosted and deployed on Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/nao04">github.com/lugrao/nao04</a>
@@ -84,7 +84,7 @@ export const projectList = [
             <li>React Virtual</li>
           </ul>
         </li>
-        <li>Deployed via Vercel</li>
+        <li>Hosted and deployed on Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/nasa-exoplanet-query">
@@ -102,7 +102,7 @@ export const projectList = [
     additionalInfoList: (
       <ul>
         <li>Made with Next.js</li>
-        <li>Deployed via Vercel</li>
+        <li>Hosted and deployed on Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/yunga-web">
@@ -125,7 +125,7 @@ export const projectList = [
             <li>Bootstrap</li>
           </ul>
         </li>
-        <li>Deployed via Vercel</li>
+        <li>Hosted and deployed on Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/ventilador">
@@ -149,7 +149,7 @@ export const projectList = [
             <li>Ably</li>
           </ul>
         </li>
-        <li>Deployed via Vercel</li>
+        <li>Hosted and deployed on Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/chat-app">
@@ -175,7 +175,7 @@ export const projectList = [
             <li>MongoDB</li>
           </ul>
         </li>
-        <li>Deployed via Vercel</li>
+        <li>Hosted and deployed on Vercel</li>
         <li>
           Source code:{" "}
           <a href="https://github.com/lugrao/cadex">github.com/lugrao/cadex</a>
